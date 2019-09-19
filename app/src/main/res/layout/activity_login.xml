@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ehtesham.fleetdoc.LoginActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:background="@drawable/customborder"
+        android:scaleY="0.9"
+        android:id="@+id/line"
+        android:scaleX="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:background="@drawable/customborder"
+            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+            android:drawablePadding="20dp"
+            android:hint="Username"
+            android:inputType="phone"
+            android:textSize="24sp"/>
+
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:background="@drawable/customborder"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="24sp"/>
+
+
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/mygrey"
+            android:shadowColor="@android:color/black"
+            android:text="Sign In"
+            android:textColor="#ffffff"
+            />
+
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignIn"
+            android:textColor="@color/myred"
+            android:paddingLeft="11dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password?" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:textColor="#000000"
+            android:paddingLeft="11dp"
+            android:textStyle="bold"
+            android:layout_marginTop="38dp"
+            android:text="Not Yet Registered?" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f82012"
+            android:shadowColor="@android:color/black"
+            android:text="Sign Up"
+            android:padding="20dp"
+            android:layout_below="@id/text"
+            android:textColor="#ffffff"
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

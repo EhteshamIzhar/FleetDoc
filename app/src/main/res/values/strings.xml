@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FleetDoc</string>
+    <string name="title_activity_find_bike">Map</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ImageButton
+        android:id="@+id/insight"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#00FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="image"
+        android:src="@drawable/bounce" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:paddingBottom="16dp"
+        android:layout_below="@+id/insight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/mygrey"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Ride Summary"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/giftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_margin="10dp"
+            android:text="  "
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/surp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/giftImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/custom_blue"
+            android:text="Thank You!"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
